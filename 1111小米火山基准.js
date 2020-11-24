@@ -1,3 +1,12 @@
+// 快手去邀好友
+threads.start(function () {
+    while (true) {
+    sleep(2000)
+    if(className("android.view.View").text("立即分享").exists()){
+    id("left_btn").findOne().click()
+    log("快手去邀好友")}
+} 
+})
 //火山去邀请好友
 threads.start(function () {
     while (true) {
